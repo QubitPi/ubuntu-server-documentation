@@ -7,7 +7,7 @@ In this section we show how to install, configure and use various options for
 creating virtual machines (VMs). For more information about these options,
 you may want to refer to our
 :ref:`Introduction to virtualization <introduction-to-virtualization>`
-  
+
 Virtual machines
 ================
 
@@ -31,10 +31,12 @@ VM tooling
    Libvirt and virsh <virtualisation/libvirt>
    virt-manager <virtualisation/virtual-machine-manager>
    Nested virtualization <virtualisation/enable-nested-virtualisation>
+   Virtualbox <virtualisation/virtualbox.md>
 
 * :ref:`How to use the libvirt library with virsh <libvirt>`
 * :ref:`How to use virt-manager and other virt* tools <virtual-machine-manager>`
 * :ref:`How to enable nested virtualisation <enable-nested-virtualisation>`
+* :ref:`Virtualbox <virtualbox>`
 
 Ubuntu in other virtual environments
 ====================================
