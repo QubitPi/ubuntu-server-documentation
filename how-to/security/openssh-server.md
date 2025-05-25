@@ -63,6 +63,40 @@ sudo systemctl restart ssh.service
 Many other configuration directives for `sshd` are available to change the server application's behavior to fit your needs. Be advised, however, if your only method of access to a server is SSH, and you make a mistake when configuring `sshd` via the `/etc/ssh/sshd_config` file, you may find you are locked out of the server upon restarting it. Additionally, if an incorrect configuration directive is supplied, the `sshd` server may refuse to start, so be particularly careful when editing this file on a remote server.
 ```
 
+### Alternative
+
+In the early 90's ASCII art became a thing. It was a way to make logos using regular ASCII characters to decorate readme
+files and add some branding. Nowadays, we can generate these banners using free tools like Text to ASCII Art Generator.
+It can be used to create a server login banner that is displayed each time people log in via SSH.
+
+First generate an ASCII logo with the [Text to ASCII Art Generator](http://patorjk.com/software/taag/). Then open up
+message of the day file
+
+```console
+sudo nano /etc/motd
+```
+
+Add a text such as
+
+```text
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+
+______     _              ______      _
+| ___ \   (_)             |  _  \    | |
+| |_/ /_ _ _  ___  _ __   | | | |__ _| |_ __ _
+|  __/ _` | |/ _ \| '_ \  | | | / _` | __/ _` |
+| | | (_| | | (_) | | | | | |/ / (_| | || (_| |
+\_|  \__,_|_|\___/|_| |_| |___/ \__,_|\__\__,_|
+```
+
+Save the file and open a new SSH session and log in, we should be greeted with our beautiful banner
+
 ## SSH keys
 
 SSH allows authentication between two hosts without the need of a password. SSH key authentication uses a **private key** and a **public key**.
