@@ -35,7 +35,7 @@ Start up the VM and login. Once in, open up a terminal.
    tmpfs 200M 0 200M 0% /run/user/1000
    ```
 
-The output shows the root partition (/) has a size of 3.9G and that 2.9G (78%) is used.
+   The output shows the root partition (/) has a size of 3.9G and that 2.9G (78%) is used.
 
 2. Display information on block devices:
 
